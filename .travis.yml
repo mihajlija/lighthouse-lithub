@@ -9,4 +9,5 @@ before_script:
 script:
   - npm run prod:build
 after_success:
-   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+  - npm run lh -- https://lithub-38a37.firebaseapp.com/
