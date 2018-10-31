@@ -8,5 +8,5 @@ before_script:
   - npm install -g preact-cli
 script:
   - npm run prod:build
-after_sucess:
+after_success:
    - firebase deploy --token $FIREBASE_TOKEN --non-interactive
